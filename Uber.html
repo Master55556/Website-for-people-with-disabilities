@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Uber</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!--link para o font awesome-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/owl.theme.default.min.css" rel="stylesheet">
+  <link href="css/temp.css" rel="stylesheet">
+</head>
+
+  <body id="top">
+    <nav class="navbar navbar-expand-lg custom_nav-container">
+        <a class="navbar-brand" href="index.html">
+         <img src="images/2_Rosa.png" alt="Logo" class="img-fluid logo-image"  style="width: 50px; margin-left: 10px;">
+          <span>
+            Mapeando Acessibilidade
+          </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+        </ul>
+    </div>
+<div>
+    <audio id="meuAudio" src="Audio/Uber.mp3"></audio>
+    <button onclick="toggleAudio()"><i id="playPauseIcon" class="fa-solid fa-play" style="font-size: 30px;"></i></button>
+</div>
+<div>
+    <button onclick="stopAudio()"><i class="fa-sharp fa-solid fa-stop" style="font-size: 30px;"></i></button>
+  </div>
+    
+    <div class="d-flex justify-content-end" style="margin-right: 90px">
+        <button onclick="toggleDayNightMode()">
+            <i id="dayNightIcon" class="fa-solid fa-moon" style="font-size: 40px;"></i>
+        </button>
+        <button onclick="increaseFontSize()">
+            <i class="fa-sharp fa-solid fa-magnifying-glass-plus" style="font-size: 40px;"></i>
+        </button>
+        <button onclick="decreaseFontSize()">
+            <i class="fa-sharp fa-solid fa-magnifying-glass-minus" style="font-size: 40px;"></i>
+        </button>
+    </div>
+    <div class="custom_menu-btn">
+        <button onclick="openNav()">
+          <span class="s-1"> </span>
+          <span class="s-2"> </span>
+          <span class="s-3"> </span>
+        </button>
+      </div>
+      <div id="myNav" class="overlay">
+        <div class="overlay-content">
+          <a href="index.html">Home</a>
+          <a href="aboutus.html">Sobre Nós</a>
+          <a href="estacoes.html">Estações</a>
+          <a href="PontosTuristicos.html">Pontos Turísticos</a>
+          <a href="Taxi.html">Táxi</a>
+          <a href="Uber.html">Uber</a>
+          <a href="bibliografia.html">Webgrafia</a>
+          <a href="Mapa.html">Mapa Site</a>
+        </div> 
+    </nav>
+    <main>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-12">
+                     <h1>Uber</h1>
+                     <img src="images/Uber.jpg" alt="Aveiro Comboios" style="width: 1360px; height:auto; margin-bottom: 20px;">
+                     <p>Nesta secção iremos falar sobre os ubers e de que maneira uma pessoa poderá pedir um uber.</p>
+                     <p>Já se sabe que a uber veio como concorrente das empresas de táxi, mas então o que é a uber?</p>
+                     <p>A Uber é uma plataforma que conecta usuários a motoristas parceiros, uma opção de mobilidade a preços acessíveis que funciona em uma plataforma prática. O aplicativo foi idealizado em 2009, quando Garrett Camp e Travis Kalanick, 
+                        criadores da Uber, enfrentaram dificuldades para encontrar um carro para transportá-los ao fim de uma conferência na França. Com a ideia em mente, os dois retornaram ao seu país natal, os Estados Unidos, e a Uber começou a funcionar na cidade de São Francisco em 2010.</p>
+                        <h1>Como usar o uber</h1>
+                        <p>1.Faça o download do app na App Store ou no Google Play ou, se preferir, acesse o site oficial da Uber.</p>
+                        <p>2.Complete o seu cadastro com seus dados pessoais</p>
+                        <p>3.Preencha o endereço de seu destino no campo Para onde?.</p>
+                        <p>4.Confirme seu endereço de partida e escolha a categoria que deseja utilizar.</p>
+                        <p>5.Escolha sua forma de pagamento, confira o trajeto de sua viagem e o tempo médio de espera do veículo e confirme.</p>
+                        <p>6.O app ou o site apresentarão os dados do veículo e do motorista parceiro. Antes da chegada do carro, você pode usar o app ou site para contatar o motorista parceiro ou cancelar a viagem.</p>
+                        <p>7.Aguarde a chegada do veículo no local indicado. Antes de embarcar, confira se os dados do carro e do motorista parceiro batem com aqueles exibidos no app.</p>
+                        <p>8.Se desejar, explique o caminho de sua preferência ao motorista parceiro. Ao fim da viagem, você poderá classificar sua experiência e deixar um comentário, ajudando a Uber a melhorar cada vez mais.</p>
+                        <h1>O porque de usar o uber?</h1>
+                        <p>Não vou mentir eu pessoalmente prefiro a uber isto porque todos os motoristas parceiros passam por uma checagem de antecedentes criminais, e precisam manter uma nota média de avaliação por parte dos usuários para permanecerem ativos na plataforma, e para mim que sou jovem é mais fácil ter 
+                            acesso daquiolo que está a acontecer pelo telémóvel sendo mais prático. </p>
+                        <h1>Acessibilidade</h1>
+                        <p>Sendo sincero mas acho que acho que a uber é o caminho certo para ti que tens dificuldades, visto que a uber para pessoas com defeciência te dará várias vantagens como
+                            pagamento eletrónico, transporte a pedido, tarifas antecipadas para que possam saber quando vão pagar e não terem medo ou risco de haver fraude,
+                            políticas antidiscriminação ou seja o motorista masi próximo de si irá atende-lo, politica de animais, ou seja sera possível levar animais consigo e ainda pode partilhar hora de chegada e partida com amigos ou outros familiares preocupados.
+                        </p>
+                        <p>Para isto tudo as pessoas na hora de escolher o veículo devem escolher com o uber assist, simplificando com os passos abaixo:</p>
+                        <p>1.Abra a aplicação Uber e indique o seu destino;</p>
+                        <p>2.Arraste de baixo para cima e selecione “Assist”;</p>
+                        <p>3.Após solicitar a sua viagem, entre em contacto com o seu motorista com antecedência para quaisquer necessidades específicas;</p>
+                        <p>4.Tenha uma boa viagem.</p>
+
+                        <p>E para pessoas surdas essas também não ficam atrás visto que tudo será feito com mensagens de texto e até os pedidos de viagem terão luzes intermitentes, mas terão tudo o que precisam de informações disso no site em baixo: </p>
+                        <p><strong>Site Uber Acessibilidade:</strong> <a href="https://www.uber.com/pt/pt-pt/about/accessibility/#:~:text=Motoristas%20portadores%20de%20deficiência,-Motoristas%20portadores%20de&text=A%20Uber%20oferece%20oportunidades%20económicas,para%20conduzir%20com%20a%20Uber.">https://www.uber.com/pt/pt-pt/about/accessibility/#:~:text=Motoristas%20portadores%20de%20deficiência,-Motoristas%20portadores%20de&text=A%20Uber%20oferece%20oportunidades%20económicas,para%20conduzir%20com%20a%20Uber.</a></p>
+
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+        
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+    </script>
+    <script src="js/custom.js"></script>
+    
+        <script src="js/global.js"></script>
+        <script>
+            var fontSize = 18; // Tamanho de fonte inicial em pixels
+        
+            function increaseFontSize() {
+                fontSize += 2;
+                var paragraphs = document.querySelectorAll('p');
+                for (var i = 0; i < paragraphs.length; i++) {
+                    paragraphs[i].style.fontSize = fontSize + 'px';
+                }
+            }
+        
+            function decreaseFontSize() {
+                if (fontSize > 8) {
+                    fontSize -= 2;
+                    var paragraphs = document.querySelectorAll('p');
+                    for (var i = 0; i < paragraphs.length; i++) {
+                        paragraphs[i].style.fontSize = fontSize + 'px';
+                    }
+                }
+            }
+        </script>
+        <script>
+            function toggleDayNightMode() {
+                var dayNightIcon = document.getElementById('dayNightIcon');
+                // Troca o ícone entre lua e sol
+                if (dayNightIcon.classList.contains('fa-moon')) {
+                    dayNightIcon.classList.remove('fa-moon');
+                    dayNightIcon.classList.add('fa-sun');
+                } else {
+                    dayNightIcon.classList.remove('fa-sun');
+                    dayNightIcon.classList.add('fa-moon');
+                }
+                // Ativa ou desativa o dark mode
+                document.body.classList.toggle('dark-mode');
+                toggleTextColors(); // Chama a função para alternar as cores do texto junto com a mudança de cor de fundo
+            }
+        
+            function toggleTextColors() {
+                var paragraphs = document.querySelectorAll('p');
+                for (var i = 0; i < paragraphs.length; i++) {
+                    paragraphs[i].classList.toggle('dark-text');
+                }
+        
+                var headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+                for (var i = 0; i < headings.length; i++) {
+                    headings[i].classList.toggle('dark-text');
+                }
+            }
+        </script>
+
+        <script>
+            var audio = document.getElementById("meuAudio");
+    
+             var playPauseIcon = document.getElementById("playPauseIcon");
+    
+        function toggleAudio() {
+            if (audio.paused) {
+                audio.play();
+                playPauseIcon.classList.remove("fa-play");
+                playPauseIcon.classList.add("fa-pause");
+            } else {
+                audio.pause();
+                playPauseIcon.classList.remove("fa-pause");
+                playPauseIcon.classList.add("fa-play");
+            }
+        }
+        </script>
+        <script>
+            var audio = document.getElementById("meuAudio");
+        
+            function stopAudio() {
+                audio.currentTime = 0;
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Mapeando Acessibilidade</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images\2_Rosa.png" alt="Logo" class="img-fluid logo-image"  style="width: 50px; margin-left: 10px; margin-top: -7px;">
+            <span style="margin-top: -7px;">
+              Mapeando Acessibilidade
+            </span>
+          </a>
+            <div class="custom_menu-btn">
+              <button onclick="openNav()">
+                <span class="s-1"> </span>
+                <span class="s-2"> </span>
+                <span class="s-3"> </span>
+              </button>
+            </div>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">Sobre Nós</a>
+                <a href="estacoes.html">Estações</a>
+                <a href="PontosTuristicos.html">Pontos Turísticos</a>
+                <a href="Taxi.html">Táxi</a>
+                <a href="Uber.html">Uber</a>
+                <a href="bibliografia.html">Webgrafia</a>
+                <a href="Mapa.html">Mapa Site</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div class="slider_container">
+        <div class="img-box">
+          <img src="images/3.png" alt="">
+        </div>
+        <div class="detail_container">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="detail-box">
+                  <h1>
+                    Uma <br>
+                    Ajuda <br>
+                    Para <br>
+                    Todos
+                  </h1>
+                  <a href="aboutus.html">
+                    Sobre Nós
+                  </a>
+                </div>
+              </div>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+  <!-- book section -->
+  <section class="book_section">
+    <div class="form_container">
+      <form action="">
+        <div class="form-row">
+          <div class="col-lg-8">
+            <div class="form-row">
+              <div class="col-md-6">
+                <label for="parkingName">Introduza para qual 'Estação' quer ir:(atenção ao espaçamento e aos acentos)</label>
+                <input type="text" class="form-control" placeholder="acb " id="parkingName" list="stationOptions">
+                <datalist id="stationOptions">
+                  <option value="">ESTAÇÕES DISPONÍVEIS:</option>
+                  <option value="">Aveiro</option>
+                  <option value="">Beja</option>
+                  <option value="">Braga</option>
+                  <option value="">Castelo Branco</option>
+                  <option value="">Coimbra</option>
+                  <option value="">Évora</option>
+                  <option value="">Faro</option>
+                  <option value="">Guarda</option>
+                  <option value="">Leiria</option>
+                  <option value="">Lisboa Oriente</option>
+                  <option value="">Portalegre</option>
+                  <option value="">Porto Campanhã</option>
+                  <option value="">Porto São Bento</option>
+                  <option value="">Santa Apolónia</option>
+                  <option value="">Santarém</option>
+                  <option value="">Sete Rios</option>
+                  <option value="">Setúbal</option>
+                  <option value="">Viana</option>
+                </datalist>
+              </div>
+             
+          </div>
+          <div class="col-lg-4">
+            <div class="btn-container">
+              <button type="submit" class="" id="searchButton">
+                Go
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </form>
+    </div>
+    <div class="img-box">
+      <img src="images/book-car.png" alt="">
+    </div>
+  </section>
+
+  <!-- end book section -->
+
+  <!-- map section -->
+<h1 style="color:#240a5e; padding: 20px;">
+   Mapa
+</h1>
+  <section class="map_section">
+    <!-- map section -->
+    <div class="map_container">
+      <div class="map-responsive">
+        <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Coimbra+Portugal" width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%" allowfullscreen></iframe>
+      </div>
+    </div>
+    <!-- end map section -->
+  </section>
+  <!-- end map section -->
+
+  <!-- footer section -->
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <script src="js/custom.js"></script>
+  <script>
+    function slideMenu(direction) {
+      var overlay = document.getElementById("myNav");
+      if (direction === 'right') {
+        overlay.style.width = "0";
+      } else if (direction === 'left') {
+        overlay.style.width = "100%";
+      }
+    }
+  </script>
+
+  <script>
+    function toggleMenu(direction) {
+      if (direction === 'right') {
+        overlay.style.width = "0";
+      } else if (direction === 'left') {
+        overlay.style.width = "100%";
+      }
+    }
+  </script>
+  <script>
+    var input = document.getElementById('parkingName');
+    var button = document.getElementById('searchButton');
+  
+    button.addEventListener('click', function(event) {
+      event.preventDefault();
+  
+
+      var value = input.value.toLowerCase();
+  
+      if (value === 'aveiro') {
+        window.location.href = 'Estacao/Estacao_Aveiro.html';
+      }
+      if (value === 'beja') {
+        window.location.href = 'Estacao/Estacao_Beja.html';
+      }
+      if (value === 'braga') {
+        window.location.href = 'Estacao/Estacao_Braga.html';
+      }
+      if (value === 'castelo branco') {
+        window.location.href = 'Estacao/Estacao_CasteloBranco.html';
+      }
+      if (value === 'coimbra') {
+        window.location.href = 'Estacao/Estacao_Coimbra.html';
+      }
+      if (value === 'évora') {
+        window.location.href = 'Estacao/Estacao_Évora.html';
+      }
+      if (value === 'faro') {
+        window.location.href = 'Estacao/Estacao_Faro.html';
+      }
+      if (value === 'guarda') {
+        window.location.href = 'Estacao/Estacao_Guarda.html';
+      }
+      if (value === 'leiria') {
+        window.location.href = 'Estacao/Estacao_Leiria.html';
+      }
+      if (value === 'lisboa oriente') {
+        window.location.href = 'Estacao/Estacao_Lisboa_Oriente.html';
+      }
+      if (value === 'portalegre') {
+        window.location.href = 'Estacao/Estacao_Portalegre.html';
+      }
+      if (value === 'porto campanha') {
+        window.location.href = 'Estacao/Estacao_PortoCampanha.html';
+      }
+      if (value === 'porto sao bento') {
+        window.location.href = 'Estacao/Estacao_PortoSaoBento.html';
+      }
+      if (value === 'santa apolonia') {
+        window.location.href = 'Estacao/Estacao_SantaApolonia.html';
+      }
+      if (value === 'aveiro santarem') {
+        window.location.href = 'Estacao/Estacao_Santarem.html';
+      }
+      if (value === 'sete rios') {
+        window.location.href = 'Estacao/Estacao_SeteRios.html';
+      }
+      if (value === 'setúbal') {
+        window.location.href = 'Estacao/Estacao_Setúbal.html';
+      }
+      if (value === 'viana') {
+        window.location.href = 'Estacao/Estacao_Viana.html';
+      }
+    });
+  </script>
+
+</body>
+
+</html>
